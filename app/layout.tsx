@@ -33,11 +33,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
       <body className="bg-gray-50 text-gray-900">
+        <Navbar />
        
         <main>{children}</main>
         
-
-        {/* Footer */}
         <footer className="p-4 bg-gray-900 text-white text-center">
           © {new Date().getFullYear()} Zemenay Tech. All rights reserved.
         </footer>
