@@ -36,7 +36,7 @@ export default function RootLayout({
        
         <main>{children}</main>
         
-        <footer className="p-4 bg-gray-900 text-white text-center">
+        <footer className="p-4 bg-gray-900 text-white text-center fixed bottom-0 width-full">
           © {new Date().getFullYear()} Zemenay Tech. All rights reserved.
         </footer>
       </body>
