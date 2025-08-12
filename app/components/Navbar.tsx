@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const Navbar: React.FC = () => (
-  <nav className="bg-blue-600 text-white shadow-md fixed top-0 left-0">
+  <nav className="bg-blue-600 text-white shadow-md fixed top-0 left-0 w-full right-0">
     <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
       <Link href="/" className="text-2xl font-bold">
         Zemenay Tech
