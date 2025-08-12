@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import React from "react";
-
-import link from "next/link";
+import Link from "next/link";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -14,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 import Navbar from "./components/Navbar";
-export const metadata = {
+   export const metadata = {
   title: 'Zemenay Tech',
   description: 'Official website of Zemenay Tech',
   icons:{

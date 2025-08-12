@@ -1,4 +1,3 @@
-// app/page.tsx
 import React from "react";
 import Link from "next/link";
 
@@ -16,9 +15,9 @@ export default function Home() {
         </p>
         <Link
           href="/contact"
-          className="mt-8 inline-block bg-blue-600 text-white px-8 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+          className="mt-8 inline-block bg-green-700 text-white px-8 py-3 rounded-lg shadow hover:bg-green-800 transition"
         >
-          Let’s Build Together
+          Let&apos;s Build Together
         </Link>
       </div>
 
@@ -41,12 +40,15 @@ export default function Home() {
               "Grow without limits using our scalable infrastructure designed to evolve with you.",
           },
         ].map((item) => (
-          <div key={item.title} className="space-y-4 p-6 bg-gray-50 rounded-lg shadow-sm">
+          <div
+            key={item.title}
+            className="space-y-4 p-6 bg-gray-50 rounded-lg shadow-sm"
+          >
             <h3 className="text-xl font-semibold">{item.title}</h3>
             <p className="text-gray-600">{item.description}</p>
             <Link
               href="/contact"
-              className="text-blue-600 font-medium hover:underline"
+              className="text-green-700 font-medium hover:underline"
             >
               Get Started
             </Link>
@@ -55,10 +57,10 @@ export default function Home() {
       </div>
 
       <div className="max-w-6xl mx-auto text-center space-y-8 px-6">
-        <h2 className="text-2xl font-semibold">Clients We've Worked With</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6 items-center justify-center">
-  
-        </div>
+        <h2 className="text-2xl font-semibold">
+          Clients We&apos;ve Worked With
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6 items-center justify-center"></div>
       </div>
 
       {/* 4. Testimonials */}
@@ -75,19 +77,20 @@ export default function Home() {
             name: "Dagmawi Bedilu",
             role: "CSO at Efuye Gela",
             quote:
-              "I can’t recommend their services enough. The level of expertise and dedication they bring to each project is unparalleled.",
+              "I can&apos;t recommend their services enough. The level of expertise and dedication they bring to each project is unparalleled.",
           },
           {
             name: "Kirubel Samuel",
             role: "Co-founder at Chewataawaqi",
             quote:
-              "The customer support is top-notch. They’re always available to guide us. Refreshing to work with a company that truly cares.",
+              "The customer support is top-notch. They&apos;re always available to guide us. Refreshing to work with a company that truly cares.",
           },
         ].map((t) => (
           <blockquote key={t.name} className="space-y-2">
-            <p className="italic text-gray-700">"{t.quote}"</p>
+            <p className="italic text-gray-700">&quot;{t.quote}&quot;</p>
             <footer className="text-gray-900 font-semibold">
-              — {t.name}, <span className="text-gray-600">{t.role}</span>
+              — {t.name},{" "}
+              <span className="text-gray-600">{t.role}</span>
             </footer>
           </blockquote>
         ))}
